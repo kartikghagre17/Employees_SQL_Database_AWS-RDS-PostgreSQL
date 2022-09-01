@@ -1,5 +1,5 @@
 
-#how many projects are "In Progress" status with project name??
+#how many projects are In Progress status with project name??
 
 SELECT status, project_name FROM project
 WHERE status = 'In Progress';
@@ -36,6 +36,8 @@ Data Output
 # Waler 	5
 # Porter	2
 
+# find the first name of employees who have more than 5 years of experienece??
+
 SELECT first_name FROM employees
 WHERE experience > 5;
 
@@ -44,11 +46,13 @@ Data Output
 #Jubain
 #Nicole
 
+# find out no. of e employees who has degree Masters with more than 10 years of experience??
+
 SELECT COUNT (*) FROM employees
 WHERE highest_degree = 'Masters' AND 
 experience > 10;
 
-
+#
 SELECT manager_name FROM reporting_manager
 ORDER BY manager_id;
 
