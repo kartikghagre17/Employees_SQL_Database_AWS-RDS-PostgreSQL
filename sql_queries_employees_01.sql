@@ -52,14 +52,17 @@ SELECT COUNT (*) FROM employees
 WHERE highest_degree = 'Masters' AND 
 experience > 10;
 
-#
+# find out the manager name in order by their ID??
+
 SELECT manager_name FROM reporting_manager
 ORDER BY manager_id;
 
+# find employees name who has joined between year 2018 and 2022??
 
 SELECT first_name, last_name FROM employees 
 WHERE created_on BETWEEN '2018-05-02' AND '2022-08-01';
 
+# find out name, email id who have completed the project??
 
 SELECT first_name, email_id FROM employees 
 JOIN project
