@@ -75,6 +75,9 @@ UPDATE project
 SET project_name = 'TimWood'
 WHERE employee_id = 410675;
 
+UPDATE project
+SET status = 'Completed'
+WHERE employee_id = 401455
 
 
 
